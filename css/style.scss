@@ -1,0 +1,59 @@
+/* Variables */
+
+// colors
+// ### Primary
+
+$clr-primary-red: hsl(0, 100%, 74%);
+$clr-primary-green: hsl(154, 59%, 51%);
+
+// ### Accent
+
+$clr-accent-blue: hsl(248, 32%, 49%);
+
+// ### Neutral
+
+$clr-neutral-dark-blue: hsl(249, 10%, 26%);
+$clr-neutral-grayish-blue: hsl(246, 25%, 77%);
+
+// ## Typography
+
+// ### Body Copy
+
+$fs-base: 16px;
+
+// ### Font
+
+$ff-primary: 'Poppins', sans-serif;
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+html {
+  font-size: $fs-base;
+}
+
+body {
+  @include flex(column);
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background: url(/images/bg-intro-mobile.png);
+  background-color: $clr-primary-red;
+
+  text-align: center;
+}
+
+.intro {
+  @include flex(column);
+  font-family: $ff-primary;
+  padding: 1rem;
+  color: white;
+}
