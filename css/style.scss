@@ -103,6 +103,7 @@ body {
 
   &__input {
     padding: 1rem 1rem 1rem 1.25rem;
+    color: rgba($clr-neutral-dark-blue, 0.8);
     border: none;
     border-radius: 0.25rem;
     outline: 1px solid $clr-neutral-grayish-blue;
@@ -119,6 +120,7 @@ body {
   }
 
   &__button {
+    cursor: pointer;
     border: none;
     border-radius: 0.25rem;
     padding: 0.75rem 0;
@@ -127,6 +129,14 @@ body {
     color: white;
     background-color: $clr-primary-green;
     box-shadow: 0px 0.25rem darken($clr-primary-green, 5%);
+
+    &:hover {
+      background-color: lighten($clr-primary-green, 10%);
+    }
+
+    &:active {
+      background-color: darken($clr-primary-green, 2.5%);
+    }
   }
 
   &__terms {

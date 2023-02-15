@@ -59,6 +59,7 @@ body {
 }
 .intro__input {
   padding: 1rem 1rem 1rem 1.25rem;
+  color: rgba(62, 60, 73, 0.8);
   border: none;
   border-radius: 0.25rem;
   outline: 1px solid hsl(246deg, 25%, 77%);
@@ -80,6 +81,7 @@ body {
   font-weight: 600;
 }
 .intro__button {
+  cursor: pointer;
   border: none;
   border-radius: 0.25rem;
   padding: 0.75rem 0;
@@ -87,6 +89,12 @@ body {
   color: white;
   background-color: hsl(154deg, 59%, 51%);
   box-shadow: 0px 0.25rem #30bb7f;
+}
+.intro__button:hover {
+  background-color: #61d6a3;
+}
+.intro__button:active {
+  background-color: #33c585;
 }
 .intro__terms {
   color: hsl(246deg, 25%, 77%);
