@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <title>Frontend Mentor | Intro component with sign up form</title>
@@ -28,8 +28,11 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
+        color: white;
         font-size: 11px;
         text-align: center;
+
+        margin-bottom: 1rem;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -44,7 +47,9 @@
         scripted tutorials is great, but understanding how developers think is
         invaluable.
       </p>
-      <h2 class="intro__try">Try it free 7 days then $20/mo. thereafter</h2>
+      <h2 class="intro__try">
+        <span>Try it free 7 days</span> then $20/mo. thereafter
+      </h2>
       <form class="intro__form">
         <input
           type="text"

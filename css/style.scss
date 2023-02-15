@@ -25,6 +25,7 @@ $fs-base: 16px;
 
 $ff-primary: 'Poppins', sans-serif;
 
+$fw-thin: 100;
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-semi-bold: 600;
@@ -37,6 +38,11 @@ $fw-bold: 700;
 
 html {
   font-size: $fs-base;
+}
+
+* {
+  font-family: $ff-primary;
+  font-size: 1rem;
 }
 
 body {
@@ -53,7 +59,88 @@ body {
 
 .intro {
   @include flex(column);
-  font-family: $ff-primary;
+  gap: 1.5rem;
   padding: 1rem;
+  margin: 5rem 0 3rem 0;
   color: white;
+
+  max-width: 375px;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: $fw-semi-bold;
+    line-height: 2.5rem;
+  }
+
+  &__paragraph {
+    line-height: 1.5rem;
+  }
+
+  &__try {
+    background-color: $clr-accent-blue;
+    border-radius: 0.5rem;
+    padding: 1.25rem 3rem;
+    margin-top: 2rem;
+
+    line-height: 1.5rem;
+    font-weight: $fw-thin;
+
+    box-shadow: 0px 0.5rem rgba($clr-neutral-dark-blue, 0.2);
+
+    & span {
+      font-weight: $fw-medium;
+    }
+  }
+  &__form {
+    @include flex(column);
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+
+    box-shadow: 0px 0.5rem rgba($clr-neutral-dark-blue, 0.2);
+  }
+
+  &__input {
+    padding: 1rem 1rem 1rem 1.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    outline: 1px solid $clr-neutral-grayish-blue;
+    text-align: left;
+
+    &:focus {
+      outline: 2px solid $clr-neutral-grayish-blue;
+    }
+
+    &::placeholder {
+      color: rgba($clr-neutral-dark-blue, 0.8);
+      font-weight: $fw-semi-bold;
+    }
+  }
+
+  &__button {
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.75rem 0;
+
+    text-transform: uppercase;
+    color: white;
+    background-color: $clr-primary-green;
+    box-shadow: 0px 0.25rem darken($clr-primary-green, 5%);
+  }
+
+  &__terms {
+    color: $clr-neutral-grayish-blue;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+
+    padding: 0 1rem;
+
+    & a {
+      color: $clr-primary-red;
+      font-weight: $fw-bold;
+
+      text-decoration: none;
+    }
+  }
 }
