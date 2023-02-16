@@ -60,25 +60,43 @@
             id="firstName"
             placeholder="First Name"
           />
+          <p class="intro__input--validate firstName hidden">
+            First Name cannot be empty
+          </p>
+
           <input
             type="text"
             class="intro__input"
             id="lastName"
             placeholder="Last Name"
           />
+          <p class="intro__input--validate lastName hidden">
+            Last Name cannot be empty
+          </p>
+
           <input
-            type="text"
+            type="email"
             class="intro__input"
             id="email"
             placeholder="Email Address"
           />
+          <p class="intro__input--validate email hidden">
+            Looks like this is not an email
+          </p>
+
           <input
-            type="text"
+            type="password"
             class="intro__input"
             id="password"
             placeholder="Password"
           />
-          <button class="intro__button">Claim your free trial</button>
+          <p class="intro__input--validate password hidden">
+            Password cannot be empty
+          </p>
+
+          <button type="button" class="intro__button">
+            Claim your free trial
+          </button>
           <p class="intro__terms">
             By clicking the button, you are agreeing to our
             <a href="#">Terms and Services</a>

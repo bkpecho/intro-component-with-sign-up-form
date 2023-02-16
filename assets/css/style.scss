@@ -130,6 +130,25 @@ body {
       color: rgba($clr-neutral-dark-blue, 0.8);
       font-weight: $fw-semi-bold;
     }
+
+    &--validate {
+      color: $clr-primary-red !important;
+      font-style: italic;
+      font-weight: $fw-semi-bold;
+      font-size: 0.7rem;
+      text-align: right;
+      margin: -0.5rem 0 0 0;
+    }
+  }
+  .error {
+    background-image: url('/images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right 2rem center;
+    outline: 2px solid $clr-primary-red;
+  }
+
+  .hidden {
+    display: none;
   }
 
   &__button {

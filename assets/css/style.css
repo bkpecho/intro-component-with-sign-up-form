@@ -87,6 +87,23 @@ body {
   color: rgba(62, 60, 73, 0.8);
   font-weight: 600;
 }
+.intro__input--validate {
+  color: hsl(0deg, 100%, 74%) !important;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-align: right;
+  margin: -0.5rem 0 0 0;
+}
+.intro .error {
+  background-image: url("/images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right 2rem center;
+  outline: 2px solid hsl(0deg, 100%, 74%);
+}
+.intro .hidden {
+  display: none;
+}
 .intro__button {
   cursor: pointer;
   border: none;
