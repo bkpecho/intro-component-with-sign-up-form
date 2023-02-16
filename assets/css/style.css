@@ -69,7 +69,7 @@ body {
   font-weight: 600;
   border: none;
   border-radius: 0.25rem;
-  outline: 1px solid hsl(246deg, 25%, 77%);
+  outline: 1px solid rgba(185, 182, 211, 0.5);
   text-align: left;
 }
 .intro__input:focus {
@@ -149,6 +149,7 @@ body {
   .intro__top h1 {
     max-width: 80%;
     font-size: 2.5rem;
+    font-weight: 700;
     line-height: 3rem;
   }
   .intro__bottom {

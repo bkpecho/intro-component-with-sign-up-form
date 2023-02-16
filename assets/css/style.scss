@@ -119,7 +119,7 @@ body {
     font-weight: $fw-semi-bold;
     border: none;
     border-radius: 0.25rem;
-    outline: 1px solid $clr-neutral-grayish-blue;
+    outline: 1px solid rgba($clr-neutral-grayish-blue, 0.5);
     text-align: left;
 
     &:focus {
@@ -200,6 +200,7 @@ body {
       & h1 {
         max-width: 80%;
         font-size: 2.5rem;
+        font-weight: $fw-bold;
         line-height: 3rem;
       }
     }
